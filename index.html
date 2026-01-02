@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Invitación</title>
+
+<style>
+:root{
+  --verde-terroso:#5f6f52;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+
+/* ===== FONDO GENERAL ===== */
+body{
+  background-color: var(--verde-terroso);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== CONTENEDOR ===== */
+.fondo{
+  position:relative;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== SILUETA DE CASA ===== */
+.casa{
+  position:absolute;
+  width:min(520px, 90vw);
+  opacity:0.25;               /* semitransparente */
+  filter: grayscale(100%);
+  user-select:none;
+  pointer-events:none;
+}
+
+/* ===== CAPA FUTURA PARA TEXTO ===== */
+.contenido{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:#ffffff;
+  opacity:0.95;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fondo">
+
+  <!-- Silueta -->
+  <img 
+    src="assets/casa2.png" 
+    alt="Silueta de casa"
+    class="casa"
+  />
+
+  <!-- Contenido futuro -->
+  <div class="contenido">
+    <!-- Aquí luego pondremos textos y botones -->
+  </div>
+
+</div>
+
+</body>
+</html>
